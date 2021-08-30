@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Incapsulare3", "Incapsulare3\Incapsulare3.csproj", "{DB6DE50A-9234-416A-B5E5-5A86C9030405}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB6DE50A-9234-416A-B5E5-5A86C9030405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6DE50A-9234-416A-B5E5-5A86C9030405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6DE50A-9234-416A-B5E5-5A86C9030405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6DE50A-9234-416A-B5E5-5A86C9030405}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A6E5F2E-5BC6-4723-B57E-39A60BD10082}
+	EndGlobalSection
+EndGlobal
