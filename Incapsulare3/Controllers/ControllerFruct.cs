@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Incapsulare3.Controllers;
+
 
 namespace Incapsulare3.Controllers
 {
