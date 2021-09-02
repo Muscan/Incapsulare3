@@ -7,7 +7,7 @@ namespace Incapsulare3
     {
         static void Main(string[] args)
         {
-            /*------------------FRUCTE-------------------------*/
+            /*------------------FRUCTE-------------------------*//*
             ControllerFruct controllerFructe = new ControllerFruct();
             //controller.printAllFruits();
 
@@ -36,31 +36,49 @@ namespace Incapsulare3
             double avg = controllerFructe.avgPreturi();
             Console.WriteLine("Media preturilor este: " + Math.Round(avg, 2));
 
-            /*------------------TARI-------------------------*/
+            *//*------------------TARI-------------------------*//*
             ControllerTara controllerTari = new ControllerTara();
             controllerTari.printTari();
             controllerTari.printTariEU();
 
-            /*------------------MASINI-------------------------*/
+            *//*------------------MASINI-------------------------*//*
             ControllerMasina controllerMasini = new ControllerMasina();
             controllerMasini.printAllCars();
             Masina bigEngineController = controllerMasini.masinaPuternica();
             
             Console.WriteLine("Motorul cel mai mare: " + bigEngineController.descriereMasina());
 
-            /*------------------PLANTE-------------------------*/
+            *//*------------------PLANTE-------------------------*//*
             ControllerPlanta controllerPlanta = new ControllerPlanta();
             controllerPlanta.PrintAllPlants();
 
-            /*------------------PRODUSE-------------------------*/
+            *//*------------------PRODUSE-------------------------*//*
             ControllerProdus controllerProduse = new ControllerProdus();
             controllerProduse.PrintAllProducts();
 
-            /*------------------LOCUINTE-------------------------*/
+            *//*------------------LOCUINTE-------------------------*//*
             ControllerLocuinta controllerLocuinte = new ControllerLocuinta();
             controllerLocuinte.PrintLocuinte();
             int nrLocuinte = controllerLocuinte.LocuinteMaterial();
             Console.WriteLine("Numarul locuintelor din caramida este: " + nrLocuinte);
+
+            */
+
+            ControllerMasina c = new ControllerMasina();
+            //add car
+            /* Masina m = new Masina("Dacia", 111, 123, "verde", 1112,"fata");
+             c.AdaugareMasina(m);
+             c.saveToFileTxt();
+             m.afisareOneCar();
+             c.printAllCars();*/
+
+            //delete car
+            c.DeleteCar("Dacia");
+            c.saveToFileTxt();
+            c.printAllCars();
+
         }
     }
 }
+
+

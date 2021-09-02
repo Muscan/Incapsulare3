@@ -115,6 +115,21 @@ namespace Incapsulare3
 
         }
 
+        public void afisareOneCar()
+        {
+            Console.WriteLine(this.descriereMasina());
+        }
+
+        public String takeCarPropertiesFromClassAndConvertToString()
+        {
+            return marca + "," + pret + "," + motor + "," + culoare + "," + anFabricatie + "," + tractiune;
+
+        }
+
+        //TBD
+        /*Add relative path(curs plus tema)
+         Recap apelare obiecte in main(Add, stergere)
+        Adaugare CRUD peste obiectele din proiect*/
 
 
 
