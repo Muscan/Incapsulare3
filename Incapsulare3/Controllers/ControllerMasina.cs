@@ -66,10 +66,10 @@ namespace Incapsulare3.Controllers
 
       
 
-        public bool DeleteCar(string masina)
+        public bool DeleteCar(string marca)
         {
 
-            int p = carIndex(masina);
+            int p = carIndex(marca);
             if (p != -1)
             {
                 Console.WriteLine("Car " + masini[p].getMarca() + " deleted!");
@@ -92,7 +92,7 @@ namespace Incapsulare3.Controllers
             //string marca, int pret, double motor, string culoare, int anFabricatie, string tractiune
             line = read.ReadLine();
             
-            while ( line != "" && line!=null)
+            while ( line !="" && line!=null)
             //(string marca, int pret, double motor, string culoare, int anFabricatie, string tractiune)
             {
              
