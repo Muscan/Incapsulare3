@@ -11,9 +11,7 @@ namespace Incapsulare3.Controllers
         public ControllerMasina()
         {
             masini = new List<Masina>();
-
             readFileTxt();
-
         }
         public void printAllCars()
         {
@@ -97,7 +95,7 @@ namespace Incapsulare3.Controllers
             {
              
                 String[] proprietati = line.Split(",");
-
+                
                 String marca = proprietati[0];
                 int pret = int.Parse(proprietati[1]);
                 double motor = double.Parse(proprietati[2]);

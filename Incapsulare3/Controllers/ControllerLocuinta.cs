@@ -10,13 +10,7 @@ namespace Incapsulare3.Controllers
         public ControllerLocuinta()
         {
             locuinte = new List<Locuinta>();
-            Locuinta locuinta1 = new Locuinta("Caramida", 230, "Alba", 230000.23);
-            Locuinta locuinta2 = new Locuinta("Lemn", 123, "Maro", 102220);
-            Locuinta locuinta3 = new Locuinta("Caramida", 189, "Rosie", 210110.45);
-
-            locuinte.Add(locuinta1);
-            locuinte.Add(locuinta2);
-            locuinte.Add(locuinta3);
+       
         }
 
         public void PrintLocuinte()
@@ -41,6 +35,32 @@ namespace Incapsulare3.Controllers
                 }
             }
             return contor;
+        }
+
+        public int Index(string material)
+        {
+            for (int i = 0; i < locuinte.Count; i++)
+            {
+                if (locuinte[i].getMaterial().Equals(material))
+                {
+                    return i;
+                }
+
+            }
+            Console.WriteLine("Index not found");
+            return -1;
+        }
+        public bool Add(Locuinta locuinta)
+        {
+            int pozitia = Index(locuinta.getMaterial());
+            if (pozitia == -1)
+            {
+                this.locuinte.Add(locuinta);
+                Console.WriteLine("Item added!");
+                return true;    
+            }
+         Console.WriteLine("Item exists!");
+            return false;
         }
 
     }
